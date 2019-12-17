@@ -4,23 +4,23 @@ body {
 }
 
 .slide.-slide_dubaj {
-  background: url(/assets/img/Dubaj.jpg) no-repeat 100%;
+  background: url(../img/Dubaj.jpg) no-repeat 100%;
 }
 
 .slide.-slide_goldenGate {
-  background: url(/assets/img/Golden-Gate.jpg) no-repeat 100%;
+  background: url(../img/Golden-Gate.jpg) no-repeat 100%;
 }
 
 .slide.-slide_london {
-  background: url(/assets/img/London.jpg) no-repeat 100%;
+  background: url(../img/London.jpg) no-repeat 100%;
 }
 
 .slide.-slide_praga {
-  background: url(/assets/img/Praga.jpg) no-repeat 100%;
+  background: url(../img/Praga.jpg) no-repeat 100%;
 }
 
 .slide.-slide_sydney {
-  background: url(/assets/img/Sydney.jpg) no-repeat 100%;
+  background: url(../img/Sydney.jpg) no-repeat 100%;
 }
 
 .slides {
