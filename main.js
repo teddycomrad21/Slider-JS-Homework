@@ -10,12 +10,12 @@ const RIGHT_ARROW = 'ArrowRight';
 const SPACE = ' ';
 
 document.querySelector('.controls').style.display = 'inline-block';
+// indContainter.style.display = 'inline-block';
 
 // console.log('OUTPUT: slideItems', slideItems);
 
 function gotoNSlide(n) {
-    // currentSlide будем увеличивать на 1
-    // при достижении массива слайдов сбрасывать в 0
+    
 
     slideItems[currentSlide].classList.toggle('active');
     indItems[currentSlide].classList.toggle('active');
@@ -37,19 +37,23 @@ var playbackStatus = true;
 var pauseBtn = document.querySelector('#pause');
 var prevBtn = document.querySelector('#prev');
 var nextBtn = document.querySelector('#next');
+var iconPlay = document.getElementsByClassName('js-play');
+var iconPause = document.getElementsByClassName('js-pause');
 
 
 function pauseSlideShow() {
     if (playbackStatus) {
         clearInterval(slideInterval);
-        pauseBtn.innerHTML = 'Play';
+        iconPlay[0].classList.toggle('-style_hidden');
+        iconPause[0].classList.toggle('-style_hidden');
         playbackStatus = !playbackStatus;
     }
 }
 
 function playSlideShow() {
     slideInterval = setInterval(gotoNextSlide, 2000);
-    pauseBtn.innerHTML = 'Pause';
+    iconPlay[0].classList.toggle('-style_hidden');
+    iconPause[0].classList.toggle('-style_hidden');
     playbackStatus = !playbackStatus;
 }
 

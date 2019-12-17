@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lesson 18</title>
+    <title>Slider JS</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://kit.fontawesome.com/d241bcaf83.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
-
+<div class="carousel">
     <ul id="slides" class="slides">
         <li class="slide -slide_dubaj active"></li>
         <li class="slide -slide_goldenGate"></li>
@@ -30,11 +30,15 @@
 
 
     <div class="controls">
-        <span id="pause"><i class="far fa-pause-circle"></i></span>
+        <span id="pause">
+            <i class="far fa-pause-circle js-pause"></i>
+            <i class="far fa-play-circle js-play -style_hidden"></i>
+        </span>
         <span id="prev"><i class="fas fa-chevron-left"></i></span>
         <span id="next"><i class="fas fa-chevron-right"></i></span>
     </div>
 
+</div>
     <!-- переделай на див кнопки -->
 
     
